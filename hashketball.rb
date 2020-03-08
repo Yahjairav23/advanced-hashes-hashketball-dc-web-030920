@@ -83,7 +83,7 @@ def player_stats(name_input)
       team_info.each do |player_info, player|
         if player_info == :players
           player.each do |name_stats|
-            if name[:player_name] == name_input
+            if player[:player_name] == name_input
               name_stats.delete(:player_name)
               return name_stats
             end
