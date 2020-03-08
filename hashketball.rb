@@ -81,8 +81,8 @@ end
 def player_stats(name_input)
     game_hash.each do |team, team_info|
     team_info.each do |player_info|
-       if player_info [:player_name]== player_search
-        return player_info[:shoe]
+       if player_info [:player_name]== name_input
+        return 
       end
     end
   end 
